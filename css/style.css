@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body {
+    background-color: hsl(180, 52%, 96%);
+    font-size: 15px;
+    font-family: 'League Spartan';
+}
+
+.bg-image{
+    width: 100%;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.filters-container {
+    background-color: white;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transform: translateY(-50%);
+}
+
+.clear-tag {
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: transparent;
+}
+
+.filter-pill {
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0.75rem;
+}
+
+.tag-text {
+    padding: 0.35rem 1rem;
+}
+
+.tag-remove {
+    background-color: hsl(180, 29%, 50%);
+    padding: 0.5rem;
+    cursor: pointer;
+    height: 100%;
+    transition: background-color 0.2s;
+    justify-content: center;
+}
+
+.tag-remove:hover {
+    background-color: hsl(180, 14%, 32%);
+}
+
+.filter-tag {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width:  80%;
+    gap: 1rem;
+    flex: 1;
+}
