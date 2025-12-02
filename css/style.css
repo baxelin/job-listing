@@ -68,3 +68,89 @@ body {
     gap: 1rem;
     flex: 1;
 }
+
+.card {
+    background-color: white;
+    width: 90%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 7px solid transparent;
+    transition: border-left-color 0.3s ease;
+}
+
+.card:hover {
+    border-left-color: hsl(180, 29%, 50%);
+}
+
+.about-section {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+}
+
+.about-section h1 {
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
+}
+
+.tag-new {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(180, 29%, 50%);
+    padding: 0.125rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.tag-featured {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(180, 14%, 20%);
+    padding: 0.125rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.tags {
+    display: flex;
+    text-align: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.job-title {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.job-desc {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: gray;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-top: 1px solid lightgray;
+    margin: 1rem 0;
+}
+
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.tag-group button {
+    background: transparent;
+    cursor: pointer;
+    padding: 0.35rem 1rem;
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
+}
