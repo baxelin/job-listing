@@ -1,23 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-body {
-    background-color: hsl(180, 52%, 96%);
-    font-size: 15px;
-    font-family: 'League Spartan';
+/* ====================================== */
+/* VARIABLES */
+/* ====================================== */
+
+:root {
+    /* Colors */
+    --bg-color: hsl(180, 52%, 96%);
+    --bg-filter: white;
+    --primary: hsl(180, 29%, 50%);
+    --gray: rgb(100, 100, 100)
+
+    /* Font */
+    --font-size: 15px;
+    --font-weight-md: 500;
+    --font-weight-lg: 700;
+    --font-family: 'League Spartan', sans-serif;
 }
 
-.bg-image{
-    width: 100%;
-}
+/* ====================================== */
+/* MODULES */
+/* ====================================== */
 
 .align-center {
     display: flex;
     align-items: center;
 }
 
-.filters-container {
-    background-color: white;
+.justify-between {
+    display: flex;
     justify-content: space-between;
+}
+
+/* ====================================== */
+/* BODY */
+/* ====================================== */
+
+body {
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+
+.bg-image{
+    width: 100%;
+}
+
+/* ====================================== */
+/* FILTERS  SECTION*/
+/* ====================================== */
+
+.filters-container {
+    background-color: var(--bg-filter);
     width: 90%;
     margin: 0 auto;
     padding: 1rem;
@@ -26,18 +60,17 @@ body {
 }
 
 .clear-tag {
-    color: rgb(100, 100, 100);
-    font-weight: bold;
+    color: var(--gray);
+    font-weight: var(--font-weight-lg);
     cursor: pointer;
     padding: 0.5rem;
     background-color: transparent;
 }
 
 .filter-pill {
-    background-color: hsl(180, 52%, 96%);
-    color: hsl(180, 29%, 50%);
-    font-weight: bold;
-    justify-content: space-between;
+    background-color: var(--bg-color);
+    color: var(--primary);
+    font-weight: var(--font-weight-lg);
     padding: 0;
     overflow: hidden;
     border-radius: 0.75rem;
@@ -48,7 +81,7 @@ body {
 }
 
 .tag-remove {
-    background-color: hsl(180, 29%, 50%);
+    background-color: var(--primary);
     padding: 0.5rem;
     cursor: pointer;
     height: 100%;
@@ -68,6 +101,10 @@ body {
     gap: 1rem;
     flex: 1;
 }
+
+/* ====================================== */
+/* CARD SECTION */
+/* ====================================== */
 
 .card {
     background-color: white;
@@ -153,4 +190,11 @@ hr {
     background-color: hsl(180, 52%, 96%);
     color: hsl(180, 29%, 50%);
     font-weight: bold;
+}
+
+.card img {
+    width: 3rem;
+    position: relative;
+    margin-top: -2.5rem;
+    margin-bottom: 1rem;;
 }
